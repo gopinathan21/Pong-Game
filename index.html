@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.pong{
+    display: flex;
+    height: 100vh;
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  #box {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    position: relative;
+  }
+  #ball {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .ball {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+  }
+  #leftPaddle {
+    width: 50px;
+    height: 10px;
+    background-color: purple;
+    bottom: 0;
+    position: absolute;
+  }
+</style>
+
+</head>
+<body>
+  <div>
+  <div class="pong">
+    <div class="score ">Score <span id="score_value"></span></div>
+    <div id="box" onMouseMove="onMouse(event)">
+          <div id="leftPaddle"></div>
+        </div>
+    </div>
+    
+  </div>
+<!-- 
+<script>
+// const box = document.getElementById('box');
+// const ball = document.getElementById('ball');
+// const leftPaddle = document.getElementById('leftPaddle');
+// const boxWidth = box.clientWidth;
+// const boxHeight = box.clientHeight;
+// const ballSize = ball.clientHeight;
+// const leftPaddleHeight = leftPaddle.clientHeight;
+// const leftPaddleWidth = leftPaddle.clientWidth;
+// const leftPaddleBounding = leftPaddle.getBoundingClientRect()
+// let ballX = 200;
+// let ballY = 200;
+// let speedX = 2;
+// let speedY = 1.5;
+// let requestAnimationFrameID;
+// let leftPaddleX = 0;
+// let leftPaddleBoundingX = 0;
+
+// function animate() {
+  
+//   ballX += speedX;
+//   ballY += speedY;
+//   const ballXP = ballX + ballSize;
+//   const ballYP = ballY + ballSize;
+
+//   if (ballX + ballSize > boxWidth || ballX < 0) {
+//     speedX = -speedX;
+//   }
+//   if (ballY + ballSize > boxHeight || ballY < 0) {
+//     speedY = -speedY;
+//   }
+
+//   const paddleTopCollision = ballYP > boxHeight - leftPaddleHeight;
+//   const paddleSideCollision =
+//   ballXP >= leftPaddleX && ballXP <= leftPaddleX + leftPaddleWidth;
+
+//   if (paddleTopCollision && paddleSideCollision ) 
+//   { 
+//     leftPaddle.style.backgroundColor = 'green';
+//     speedY = -speedY; 
+//   }
+
+//   ball.style.top = ballY + 'px';
+//   ball.style.left = ballX + 'px';
+  
+//   requestAnimationFrameID = requestAnimationFrame(animate);
+// }
+
+// function onMouse(event) {
+//  leftPaddleX = event.clientX - leftPaddleBounding.right;
+
+//  if(leftPaddleX<0){
+//   leftPaddleX = 0
+//  }
+
+//   if(leftPaddleX+leftPaddleWidth>boxWidth){
+//            leftPaddleX = boxWidth;
+//  }
+
+//  leftPaddle.style.left= leftPaddleX + 'px';
+
+
+// }
+
+// animate();
+
+// function stop() {
+//   cancelAnimationFrame(requestAnimationFrameID);
+// }
+
+// function start() {
+//   animate();
+// }
+</script> -->
+<script src="script.js"></script>
+</body>
+</html>
