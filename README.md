@@ -9,7 +9,10 @@
 3. **Improved Styling**: Enhance the game's visual appeal by customizing elements such as background color to make the game more engaging.
 
 4. **Refined Logic**: Implement more refined collision and gameplay logic to create a smoother and more intuitive gaming experience.
+
 5. **Ball collision** : collisions between balls and changing direction may be a good idea
+
+6. **Better Logic** 😂😅
 
 ## Bugs
 
